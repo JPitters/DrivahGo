@@ -6,14 +6,14 @@ class Main extends Component {
         return (
             <div className="login-base">
                 <div className="logo-container">
-                    <span>DrivahGo</span>
+                    <h2>DrivahGo</h2>
                 </div>
                 <div className="content-container">
                     <form>
-                        <h2>Log In</h2>
+                        <h4>Log In Portal</h4>
                         <input type="email" name="email" placeholder="GCKey Email"/>
                         <input type="text" name="SIN" placeholder="Social Insurance Number"/>
-                        <input type="password" name="password" placeholder="password"/>
+                        <input type="password" name="password" placeholder="Password"/>
                         <Button type="Submit" className="btn-secondary">Confirm Log In</Button>
                     </form>
                 </div>

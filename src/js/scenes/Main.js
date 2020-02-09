@@ -7,14 +7,33 @@ import Emissions from '../scenes/Emissions';
 import Affiliates from '../scenes/Affiliates';
 
 class Main extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            auth: true
+        };
+    }
+
+    componentDidMount(){
+        this.state.auth = true;
+    }
+
     render() { 
-        return (
+        const { auth } = this.state;
+        return auth 
+            ?
             <Base>
                 <Switch>
-                    <Route component={Login} exact path="/" />
+                    <Route component={Dashboard} exact path="/dashboard" />
+                    <Route component={Emissions} path="/emissions" />
+                    <Route component={Affiliates} path="/Affiliates" />
                 </Switch>
             </Base>
-        );
+            :
+            <Switch>
+                    <Route component={Login} exact path="/" />
+            </Switch>;
     }
 }
  

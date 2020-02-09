@@ -6,10 +6,12 @@ class Header extends Component {
         return (
             <section className="site-head">
                 <div className="header-container">
-                    <Nav className="row">
-                        <div className="logo-container col-md-auto">
+                    <Nav className="nav-bar">
+                        <div className="logo-container">
+                            DrivahGo
                         </div>
-                        <div className="nav-opener col-1">
+                        <div className="nav-opener">
+                        []
                         </div>
                     </Nav>
                 </div>
