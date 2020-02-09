@@ -16,7 +16,7 @@ class Main extends Component {
     }
 
     componentDidMount(){
-        this.state.auth = true;
+        this.state.auth = false;
     }
 
     render() { 
